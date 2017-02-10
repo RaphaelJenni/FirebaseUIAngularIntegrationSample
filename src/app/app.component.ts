@@ -53,9 +53,11 @@ export class AppComponent implements AfterViewInit {
 
   firebaseUIPopup() {
     let uiConfig = {
-      signInSuccessUrl: function (currentUser, credential, rederictUrl) {
-        console.log(currentUser);
-        return false;
+      callbacks: {
+        signInSuccess: function (currentUser, credential, rederictUrl) {
+          console.log(currentUser);
+          return false;
+        }
       },
       signInFlow: 'popup',
       signInOptions: [
@@ -78,6 +80,6 @@ export class AppComponent implements AfterViewInit {
 
   logout() {
     console.log(this.aF.auth.getAuth());
-    this.aF.auth.logout().then(() => console.log(this.aF.auth.getAuth()))
+    this.aF.auth.logout().then(() => console.log(this.aF.auth.subscribe(v => console.log(v))))
   }
 }
