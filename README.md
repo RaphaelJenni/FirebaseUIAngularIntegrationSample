@@ -28,6 +28,11 @@ WARNING: the getAuth() API has changed behavior since adding support for Firebas
     Please observe the actual authState asynchronously by subscribing to the auth service: af.auth.subscribe().
     The getAuth method will be removed in future releases
 ```
+#### ERROR in ./~/firebase/app/shared_promise.js
+     
+The 'promise-polyfill' dependencie is missing in firebase npm package version 3.7.8, you can install 'promise-polyfill' or downgrade firebase package to 3.7.7.
+
+Install polyfill: `npm install promise-polyfill --save-exact`
 
 ## Documentations
 
