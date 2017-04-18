@@ -19,7 +19,7 @@ export const environment = {
 };
 ```
 
-##Known issues
+## Known issues
 #### Synchronous getAuth
 Needs to be fixed.
 ```
