@@ -21,7 +21,7 @@ export const environment = {
 
 ## Known issues
 #### Synchronous getAuth
-Needs to be fixed. #1
+Needs to be fixed. [Issue#1](https://github.com/RaphaelJenni/FirebaseUIAngularIntegration/issues/1)
 ```
 WARNING: the getAuth() API has changed behavior since adding support for Firebase 3.
     This will return null for the initial value when the page loads, even if the user is actually logged in.
