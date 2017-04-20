@@ -1,5 +1,7 @@
 # FirebaseUIAngularIntegration
 
+**If you want to have an easy drop in solution visit: [FirebaseUIAngular](https://github.com/RaphaelJenni/FirebaseUI-Angular)**
+
 This project is a sample app for the FirebaseUI integrated into an Angular 2 app.
 Feel free to use it for yourself.
 
